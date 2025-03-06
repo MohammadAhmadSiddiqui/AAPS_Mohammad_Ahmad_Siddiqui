@@ -26,5 +26,6 @@ public class RangeSumQuery {
             System.out.print("Sum:" +s1);
             System.out.println();
         }
+        sc.close();
     }
 }
