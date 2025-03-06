@@ -1,19 +1,19 @@
 import java.util.*;
 public class RangeSumQuery {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         System.out.println("Enter size of array:");
-        int N = sc.nextInt();
+        int N=sc.nextInt();
         System.out.println("Enter number of Queries:");
-        int Q = sc.nextInt();
+        int Q=sc.nextInt();
 
-        int[]arr=new int[N];
+        int []arr=new int[N];
         System.out.println("Enter "+N+" number of elements of array");
         for (int i=0;i<N;i++) {
             arr[i]=sc.nextInt();
         }
 
-        int[] sum=new int[N + 1];
+        int []sum=new int[N+1];
         for (int i=1;i<=N;i++) {
             sum[i] =sum[i-1]+arr[i-1];
         }
